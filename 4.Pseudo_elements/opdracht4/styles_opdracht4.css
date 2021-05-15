@@ -1,0 +1,31 @@
+h3 {
+    position: relative;
+    background-color: turquoise;
+    color: whitesmoke;
+    font-size: 2vw;
+    padding: 1% 10% 1% 30%;
+    width: 30%;
+    margin: 200px auto;
+}
+
+h3::before {
+    content: '';
+    position: absolute;
+    border-top: 0.5vw solid coral;
+    border-left: 0.5vw solid coral;
+    width: 7%;
+    height: 89%;
+    top:0;
+    left:0;
+}
+
+h3::after {
+    content: '';
+    position: absolute;
+    border-bottom: 0.5vw solid coral;
+    border-right: 0.5vw solid coral;
+    width: 7%;
+    height: 89%;
+    bottom:0;
+    right: 0;
+}

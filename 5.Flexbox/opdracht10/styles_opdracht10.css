@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    padding:0;
+    flex-wrap: wrap;
+}
+
+.one, .two {
+    display: flex;
+    width: 100%;
+}
+
+.one > div, .two > div {
+    background-color: lightskyblue;
+    padding: 3% 4%;
+    color: black;
+    border: 1px solid black;
+    font-size: 3vw;
+    border-radius: 10px;
+}
+
+.one div:first-child {
+    background-color: lightgreen;
+}
+
+.one div:nth-child(3) {
+    background-color: lightgreen;
+    color: lightgreen;
+    padding: 3% 2.6%;
+}
+
+.one div:nth-child(3):active {
+    color: black;
+}
+
+.one div:nth-child(2):active {
+    transform: scale(-1, 1);
+    background-image: linear-gradient(to right, purple, blue);
+}
+
+.one div:nth-child(3):active {
+    color:black;
+}
+
+.two div:nth-child(1):active {
+    border-radius: 50%;
+}
+
+.two div:first-child {
+    background-color: whitesmoke;
+}
+
+.two div:nth-child(2) {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 2vw;
+    padding: 3% 2.8%;
+    position: relative;
+    animation-duration: 4s;
+}
+
+.two div:nth-child(2):active{
+    background-color: rgb(63, 63, 236);
+    animation-name: mymove;
+    animation-duration: 2s;
+}
+
+@keyframes mymove {
+    from {top:0;}
+    to {top: 250%;}
+  }
+
+.two div:nth-child(3) {
+    background-image: linear-gradient(to right, rgb(0, 204, 255), rgb(124, 158, 167));
+}
+

@@ -1,0 +1,25 @@
+div {
+    width:15vw;
+    height: 15vw;
+    background-color: tomato;
+    position: relative;
+    margin: 5%;
+}
+
+div::after {
+content:'';
+transform: rotate(30deg);
+position: absolute;
+background-color: tomato;
+width: 15vw;
+height: 15vw;
+}
+
+div::before {
+    content:'';
+    transform: rotate(60deg);
+    position: absolute;
+    background-color: tomato;
+    width: 15vw;
+    height: 15vw;
+    }

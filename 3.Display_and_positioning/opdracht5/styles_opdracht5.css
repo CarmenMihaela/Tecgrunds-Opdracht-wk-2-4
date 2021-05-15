@@ -1,0 +1,21 @@
+img {
+    position:relative;
+}
+
+h1, p {
+    position:absolute;
+    z-index: 999;
+}
+
+h1:nth-of-type(2) {
+    top: 10%;
+}
+
+p:first-of-type {
+    top:20%;
+}
+
+p:nth-of-type(2) {
+    top: 25%;
+}
+

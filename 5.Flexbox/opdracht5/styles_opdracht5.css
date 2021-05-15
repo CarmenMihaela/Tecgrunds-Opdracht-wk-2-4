@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    background-color: palegoldenrod;
+    padding:0;
+}
+
+div {
+    background-color: lightgreen;
+    padding: 3%;
+    margin: 1%;
+    color: black;
+}
+
+ div div:nth-of-type(2) {
+    height: 5vw;
+}
+
+.one {
+    align-items: stretch;
+}
+
+.two {
+    align-items: flex-start;
+}
+
+.three {
+    align-items: flex-end;
+}
+
+
+.four {
+    align-items: center;
+}
+
+
+.five {
+    align-items: baseline;
+}

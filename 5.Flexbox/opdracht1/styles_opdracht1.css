@@ -1,0 +1,13 @@
+#container {
+    display: flex;
+    background-color: palegoldenrod;
+    justify-content: flex-start;
+    padding:0;
+}
+
+div {
+    background-color: lightgreen;
+    padding: 4%;
+    margin: 1%;
+    color: black;
+}

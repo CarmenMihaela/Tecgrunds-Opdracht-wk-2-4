@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>4. Pseudo elements. Opdracht 2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles_opdracht2.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <h1>Opdracht 2</h1>
+
+        <p><strong>Nog 9 meer pseudo-elements</strong></p>
+        <table>
+            <th>pseudo-element</th>
+            <th>syntax</th>
+            <th>wat het inhoudt</th>
+            <tr>
+                <td>::first-letter (:first-letter)</td>
+                <td> /* Selects the first letter of a p */  <br>
+                    p::first-letter { <br>
+                        font-size: 130%; <br>
+                  } </td>
+                  <td>applies styles to the first letter of the first line of a block-level element, but only when not preceded by other content (such as images or inline tables).</td>
+            </tr>
+            <tr>
+                <td>::first-line</td>
+                <td> /* Selects the first line of a <p> */ <br>
+                    p::first-line { <br>
+                        color: red; <br>
+                    } </td>
+                  <td>TThe ::first-line CSS pseudo-element applies styles to the first line of a block-level element. 
+                      Note that the length of the first line depends on many factors, including the width of the element, the width of the document, and the font size of the text.</td>
+            </tr>
+            <tr>
+                <td>::file-selector-button</td>
+                <td> selector::file-selector-button </td>
+                  <td>The ::file-selector-button CSS pseudo-element represents the button of an input of  type="file".
+
+                  </td>
+            </tr>
+            <tr>
+                <td>::grammar-error</td>
+                <td> ::grammar-error</td> 
+                  <td>This is an experimental technology. represents a text segment which the user agent has flagged as grammatically incorrect.</td>
+            </tr>
+            <tr>
+                <td>::marker</td>
+                <td>::marker { <br>
+                    color: blue; <br>
+                    font-size: 1.2em; <br>
+                  }</td>
+                  <td> 
+                    selects the marker box of a list item, which typically contains a bullet or number. 
+                    It works on any element or pseudo-element set to display: list-item, such as the li and summary elements.</td>
+            </tr>
+            <tr>
+                <td>::part()</td>
+                <td>custom-element::part(foo) { <br>
+                    /* Styles to apply to the `foo` part */ <br>
+                  }</td>
+                  <td> 
+                    represents any element within a shadow tree that has a matching part attribute.</td>
+            </tr>
+            <tr>
+                <td>::placeholder</td>
+                <td>::placeholder { <br>
+                    color: blue; <br>
+                  }</td>
+                  <td> 
+                    represents the placeholder text in an input or textarea element.</td>
+            </tr>
+            <tr>
+                <td>::selection</td>
+                <td>::selection {<br>
+                    background-color: cyan; <br>
+                  }</td>
+                  <td> 
+                    applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text).
+                    In particular, background-image is ignored.</td>
+            </tr>
+            <tr>
+                <td>::slotted(*)</td>
+                <td>::slotted(*) {<br>
+                    font-weight: bold; <br>
+                  }</td>
+                  <td> 
+                    represents any element that has been placed into a slot inside an HTML template (see Using templates and slots for more information).
+
+                This only works when used inside CSS placed within a shadow DOM. 
+                Note also that this selector won't select a text node placed into a slot; it only targets actual elements.</td>
+            </tr>
+            <tr>
+                <td>::spelling-error</td>
+                <td>::spelling-error</td>
+                  <td> 
+                    This is an experimental technology. Represents a text segment which the user agent has flagged as incorrectly spelled.</td>
+            </tr>
+            <tr>
+                <td>::target-text</td>
+                <td>::target-text {<br>
+                    background-color: pink; <br>
+                  }</td>
+                  <td> 
+                    This is an experimental technology. It represents the text that has been scrolled to if the browser supports scroll-to-text fragments. 
+                    It allows authors to choose how to highlight that section of text.</td>
+            </tr>
+        </table>
+
+
+
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>
+
+
+
+

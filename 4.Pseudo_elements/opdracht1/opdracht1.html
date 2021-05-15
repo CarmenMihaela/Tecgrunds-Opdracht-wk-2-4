@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>4. Pseudo elements. Opdracht 1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles_opdracht1.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <h1>Opdracht 1</h1>
+
+        <p><strong>Kun je enkele voorbeelden geven van pseudo-elementen (minimaal 4)? Beschrijf met je eigen woorden wat deze pseudo-elementen inhouden.</strong></p>
+        <table>
+            <th>pseudo-element</th>
+            <th>syntax</th>
+            <th>wat het inhoudt</th>
+            <tr>
+                <td>::after </td>
+                <td> * Add an arrow after links */  <br>
+                     a::after { <br>
+                    content: "→"; <br>
+                  } </td>
+                  <td>Creates a pseudo-element that is the last child of the selected element. It is often used to add cosmetic content to an element with the content property. 
+                      It is inline by default.</td>
+            </tr>
+            <tr>
+                <td>::backdrop</td>
+                <td> /* Backdrop is only displayed when dialog is opened with dialog.showModal() */ <br>
+                    dialog::backdrop { <br>
+                      background: rgba(255,0,0,.25); <br>
+                    } </td>
+                  <td>The ::backdrop CSS pseudo-element is a box the size of the viewport which is rendered immediately beneath any element being presented in full-screen mode. 
+                      This includes both elements which have been placed in full-screen mode using the Fullscreen API and dialog elements.
+                    When multiple elements have been placed into full-screen mode, the backdrop is drawn immediately beneath the frontmost such element, 
+                    and on top of the older full-screen elements.</td>
+            </tr>
+            <tr>
+                <td>::before</td>
+                <td> /* Add a heart before links */ <br>
+                    a::before { <br>
+                      content: "♥"; <br>
+                    }</td>
+                  <td>creates a pseudo-element that is the first child of the selected element. 
+                      It is often used to add cosmetic content to an element with the content property. It is inline by default.</td>
+            </tr>
+            <tr>
+                <td>::cue</td>
+                <td> ::cue { <br>
+                    color: yellow; <br>
+                    font-weight: bold; <br>
+                  }</td> 
+                  <td>The ::cue CSS pseudo-element matches WebVTT cues within a selected element. 
+                      This can be used to style captions and other cues in media with VTT tracks.
+                      The properties are applied to the entire set of cues as if they were a single unit. 
+                      The only exception is that background and its longhand properties apply to each cue individually, to avoid creating boxes and obscuring unexpectedly large areas of the media.</td>
+            </tr>
+            <tr>
+                <td>::cue-region</td>
+                <td> ::cue-region { <br>
+                    color: yellow; <br>
+                    font-weight: bold; <br>
+                  }</td>
+                  <td> 
+                    This is an experimental technology
+                    The ::cue-region CSS pseudo-element matches WebVTT cues within a selected element. This can be used to style captions and other cues in media with VTT tracks.</td>
+            </tr>
+        </table>
+
+
+
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>
+
+
+
+

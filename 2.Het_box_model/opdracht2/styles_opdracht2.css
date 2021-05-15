@@ -1,0 +1,11 @@
+div {
+    background-color:lightgreen;
+}
+
+div>p {
+    background-color: darkgreen;
+    border: 2px solid black;
+}
+span {
+    background-color: whitesmoke;
+}

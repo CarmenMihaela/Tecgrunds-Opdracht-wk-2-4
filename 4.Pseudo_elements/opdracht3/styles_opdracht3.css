@@ -1,0 +1,53 @@
+p::first-line {
+    color: brown;
+}
+
+p + p::first-letter {
+    font-size: xx-large;
+
+}
+
+p:nth-of-type(3)::before{
+    content:"I did this using the selector."
+}
+
+p:nth-of-type(4)::after{
+    content:"I did this using the selector."
+}
+
+::marker { 
+    color: red;
+    font-size: 23px;
+  }
+
+::selection {
+    background: yellow;
+  }
+
+video::backdrop {
+    background-color: #448;
+  }
+
+::cue {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+input[type=file]::file-selector-button {
+    border: 2px solid #6c5ce7;
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: #a29bfe;
+    transition: 1s;
+  }
+  
+input[type=file]::file-selector-button:hover {
+    background-color: #81ecec;
+    border: 2px solid #00cec9;
+  }
+
+input::placeholder {
+    color: coral;
+    font-style:italic;
+}
+

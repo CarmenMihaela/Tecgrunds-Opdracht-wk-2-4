@@ -1,0 +1,13 @@
+p {
+    border: 2px solid grey;
+    font-size: 1vw;
+    position: relative;
+    width: 50%;
+}
+
+p::after {
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan luctus commodo. Etiam faucibus maximus elit vel tincidunt. Curabitur sit amet cursus erat. Integer mattis nisi felis, et iaculis tellus condimentum vitae. Integer porttitor, magna quis tincidunt euismod, odio tortor pellentesque nulla, id hendrerit erat erat vitae urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sed arcu arcu. Phasellus fermentum erat eget felis viverra, quis feugiat sem fringilla. Morbi bibendum augue quis nisi tincidunt, vitae accumsan nisl lobortis. Nunc fringilla lorem porttitor sem gravida vulputate. Proin elementum, leo nec rhoncus pellentesque, sapien risus scelerisque lorem, eget tristique nibh dolor id mi. Ut aliquet congue scelerisque. Morbi ornare ligula a justo posuere, aliquam condimentum nulla pellentesque. Suspendisse ut egestas leo. Cras convallis eu dolor ut ultrices. Vestibulum ac lectus quis est ornare ullamcorper ornare a quam. Ut quis massa nec sem iaculis finibus vitae nec lacus. Mauris dictum orci tempor dui auctor tincidunt. Vestibulum pellentesque pharetra libero a viverra. Donec sed velit ut arcu condimentum rutrum. Nunc aliquet vitae augue in ullamcorper. Quisque faucibus mauris a tincidunt venenatis. Quisque mi nisl, rutrum et blandit eu, eleifend nec sem. Fusce varius erat metus, vel accumsan purus volutpat quis. Nullam ac mi ipsum. Pellentesque tempus vitae orci quis aliquet. Integer congue aliquam ante ac tristique. Fusce in neque a nibh fermentum rhoncus. Sed bibendum, velit in commodo tempus, lacus orci malesuada metus, nec vestibulum orci dolor in nulla. Aliquam et purus velit. Curabitur porta nisi lectus, in mollis augue ullamcorper mattis. Maecenas non suscipit massa, nec varius orci. Cras vulputate dui in tincidunt volutpat. Duis porttitor dui vel augue sagittis, at laoreet justo suscipit.';
+    position: absolute;
+    margin: 0 0 0 -100%;
+    padding: 2%;
+}

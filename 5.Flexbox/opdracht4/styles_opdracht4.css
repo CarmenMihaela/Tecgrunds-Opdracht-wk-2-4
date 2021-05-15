@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    background-color: palegoldenrod;
+    padding:0;
+    width: 50vw;
+}
+
+div {
+    background-color: lightgreen;
+    padding: 4%;
+    margin: 1%;
+    color: black;
+}
+
+.one {
+    justify-content: flex-start;
+}
+
+.two {
+    justify-content: flex-end;
+}
+
+.three {
+    justify-content: center;
+}
+
+.four {
+    justify-content: space-between;
+}
+
+.five {
+    justify-content: space-around;
+}
+
+.six {
+    justify-content: space-evenly;
+}
+
+.seven {
+    justify-content: start;
+}
+
+.eight {
+    writing-mode: vertical-rl;
+    justify-content: end;
+}
+
+.nine {
+    justify-content: left;
+}
+
+.ten {
+    justify-content: right;
+}

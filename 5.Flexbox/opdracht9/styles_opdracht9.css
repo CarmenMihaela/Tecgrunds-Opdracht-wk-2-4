@@ -1,0 +1,45 @@
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h3, p {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    padding: 0;
+    margin: 2%;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 22vw;
+    height: 20vw;
+}
+
+h3 {
+    color: blue;
+    margin-bottom: 10%;
+
+}
+
+div div, p, h3 {
+    width: 96%;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 7% 0;
+    font-size: 1vw;
+    width: 93%;
+    transition-duration: 0.4s;
+    bottom:0;
+}
+
+button:hover {
+    background-color: green;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

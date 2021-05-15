@@ -1,0 +1,21 @@
+
+p {
+    position: absolute;
+    top: 200px;
+    right: 300px;
+    font-size: 50px;
+    color:darkblue;
+}
+
+p + p {
+    top: 300px;
+    font-size: 20px;
+    color: yellow;
+    right: 400px;
+}
+
+span {
+    color: whitesmoke;
+}
+
+

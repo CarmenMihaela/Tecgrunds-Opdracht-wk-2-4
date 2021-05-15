@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    padding:0;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.one, .two {
+    display: flex;
+    width: 100%;
+}
+
+.one > div, .two > div {
+    background-color: lightskyblue;
+    padding: 3% 4%;
+    color: black;
+    border: 1px solid black;
+    font-size: 3vw;
+    border-radius: 10px;
+}
+
+.one div:first-child {
+    background-color: palegoldenrod;
+}
+
+.one div:nth-child(3) {
+    background-color: lightgreen;
+}
+
+.two div:first-child {
+    background-color: whitesmoke;
+}
+
+.two div:nth-child(2) {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.two div:nth-child(3) {
+    background-image: linear-gradient(to right, rgb(0, 204, 255), rgb(0, 102, 128))
+}
