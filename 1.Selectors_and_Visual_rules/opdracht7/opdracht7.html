@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>1.Selectors_and_Visual_rules. Opdracht 7</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <h1>Opdracht 7</h1>
+
+        <p><strong>Maak nu een html bestand aan met voorbeelden van alle soorten selectors erin. Maak een link in je antwoord die naar dat html bestand verwijst. </strong></p>
+        
+        <table>
+            <th>Selector</th>
+            <th>Voorbeeld</th>
+            <th>Vorbeeldbescrijving</th>
+        <tr>
+            <td><a href="class_selectors.html">class</a></td>
+            <td>.intro</td>
+            <td>selects all elements with class="intro"</td>
+        </tr>
+        <tr>
+          <td>class1.class</td> 
+          <td>name1.name2</td>
+          <td>Selects all elements with both name1 and name2 set within its class attribute</td> 
+        </tr>
+        <tr>
+            <td>class1. class</td> 
+            <td>name1. name2</td>
+            <td>Selects ll elements with name2 that is a descendant of an element with name1</td> 
+          </tr>
+        <tr>
+            <td><a href="id_selectors.html">#id</a></td>
+            <td>#firstname</td>
+            <td>Selects the element with id="firstname"</td>
+        </tr>
+        <tr>
+            <td><a href="all_elements_selector.html">*</a></td>
+            <td>*</td>
+            <td>Selects all elements</td>
+        </tr>
+        <tr>
+            <td><a href="">element</a></td>
+            <td>p</td>
+            <td>Selects all p elements</td>
+        </tr>
+        <tr>
+            <td>element.class</td>
+            <td>p.intro</td>
+            <td>Selects all p elements with class="intro"</td>
+        </tr>
+        <tr>
+            <td>element,element</td>
+            <td>div, p</td>
+            <td>Selects all div elements and all p elements</td>
+        </tr>
+        <tr>
+            <td>element element</td>
+            <td>div p</td>
+            <td>Selects all p elements inside div elements</td>
+        </tr>
+        <tr>
+            <td>element>element</td>
+            <td>div > p</td>
+            <td>	Selects all p elements where the parent is a div element</td>
+        </tr>
+            <td>element+element</td>
+            <td>div + p</td>
+            <td>Selects the first p element that is placed immediately after div elements</td>
+        </tr>
+        <tr>
+            <td>element1 ~ element2</td>
+            <td>p ~ ul</td>
+            <td>	Selects every ul element that is preceded by a p element</td>
+        </tr>
+        <tr>
+            <td>attribute</td>
+            <td>[target]</td>
+            <td>Selects all elements with a target attribute</td>
+        </tr>
+        <tr>
+            <td>:active</td>
+        </tr>
+        <tr>
+            <td>::after</td>
+        </tr>
+        <tr>
+            <td>::before</td>
+        </tr>
+        <tr>
+            <td>:checked</td>
+            <td>input:checked</td>
+        </tr>
+        <tr>
+            <td>:default</td>
+            <td>input:default</td>
+        </tr>
+        <tr>
+            <td>:empty</td>
+            <td>p:empty</td>
+            <td>Selects every <p> element that has no children (including text nodes)</td>
+        </tr>
+        <tr>
+            <td>:enabled</td>
+            <td>input:enabled</td>
+        </tr>
+        <tr>
+            <td>:first-child</td>
+            <td>p:first-child</td>
+            <td>Selects every <p> element that is the first child of its parent</td>
+        </tr>
+        <tr>
+            <td>::first-letter</td>
+        </tr>
+        <tr>
+            <td>::first-line</td>
+        </tr>
+        <tr>
+            <td>:first-of-type</td>
+        </tr>
+        <tr>
+            <td>:focus</td>
+        </tr>
+        <tr>
+            <td>:fullscreen</td>
+        </tr>
+        <tr>
+            <td>:hover</td>
+        </tr>
+        <tr>
+            <td>:in-range</td>
+            <td>input:in-range</td>
+        </tr>
+        <tr>
+            <td>:indeterminate</td>
+            <td>input:indeterminate</td>
+        </tr>
+        <tr>
+            <td>:invalid</td>
+            <td>input:invalid</td>
+        </tr>
+        <tr>
+            <td>:lang(language)</td>
+        </tr>
+        <tr>
+            <td>:last-child</td>
+            <td>p:last-child</td>
+            <td>Selects every p element that is the last child of its parent</td>
+        </tr>
+        <tr>
+            <td>:last-of-type</td>
+        </tr>
+        <tr>
+            <td>:link</td>
+        </tr>
+        <tr>
+            <td>::marker</td>
+        </tr>
+        <tr>
+            <td>:not(selector)</td>
+        </tr>
+        <tr>
+            <td>:nth-child(n)</td>
+        </tr>
+        <tr>
+            <td>:nth-last-child(n)</td>
+        </tr>
+        <tr>
+            <td>:nth-last-of-type(n)</td>
+        </tr>
+        <tr>
+            <td>:nth-of-type(n)</td>
+        </tr>
+        <tr>
+            <td>:only-of-type</td>
+        </tr>
+        <tr>
+            <td>:only-child</td>
+        </tr>
+        <tr>
+            <td>:optional</td>
+            <td>input:optional</td>
+        </tr>
+        <tr>
+            <td>out-of-range</td>
+            <td>input:optional</td>
+        </tr>
+        <tr>
+            <td>::placeholder</td>
+            <td>input::placeholder</td>
+        </tr>
+        <tr>
+            <td>:read-only</td>
+            <td>input:read-only</td>
+        </tr>
+        <tr>
+            <td>:read-write</td>
+            <td>input:read-write</td>
+        </tr>
+        <tr>
+            <td>:required</td>
+            <td>input:required</td>
+        </tr>
+        <tr>
+            <td>:root</td>
+            <td>:root</td>
+            <td>Selects the document's root element</td>
+        </tr>
+        <tr>
+            <td>::selection</td>
+            <td>::selection</td>
+            <td>Selects the portion of an element that is selected by a user</td>
+        </tr>
+        <tr>
+            <td>:target</td>
+            <td>#news:target</td>
+            <td>Selects the current active #news element (clicked on a URL containing that anchor name</td>
+        </tr>
+        <tr>
+            <td>:valid</td>
+            <td>input:valid</td>
+        </tr>
+        <tr>
+            <td>:visited</td>
+        </tr>
+        </table>
+
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>

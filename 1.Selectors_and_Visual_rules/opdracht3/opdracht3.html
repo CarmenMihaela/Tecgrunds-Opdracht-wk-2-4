@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>1.Selectors and Visual rules.Opdracht 3</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <h1>Opdracht 3</h1>
+        <p> <strong> Er zijn verschillende selectors, bijvoorbeeld:
+            <ul>
+                <li>type selectors</strong>
+                    <p>De CSS-type selector komt overeen met elementen op knooppuntnaam. Met andere woorden, het selecteert alle elementen van het gegeven type binnen een document
+                        (dit is de voordeel van dit selector).
+                    </p>
+                    <p>Syntax : element { style properties }</p>
+                    <P>Voorbeelden:
+                        <ol>
+                            <li>span { <br>
+                                background-color: skyblue;
+                              }</li>
+                            <li>h1 { <br> 
+                                color: blue; <br>
+                             }</li>
+                            <li>@namespace example url(http://www.example.com); <br>
+                                example|h1 { color: blue }</li>
+                        </ol>
+                    </P>
+                </li>
+                
+                <li> <strong> descendant selectors </strong>
+                <p>De descendant combinator - meestal weergegeven door een enkele spatie () - combineert twee selectors zodat elementen die overeenkomen met de tweede selector 
+                    worden geselecteerd als ze een voorouder (ouder, ouder van ouder, ouder van ouder, enz.) - element hebben dat overeenkomt met de eerste selector. 
+                    Selectors die een afstammingscombinator gebruiken, worden descendant selectors genoemd.</p></li>
+                    <p>Voorbeelden:
+                        <ol>
+                            <li>li { <br>
+                                list-style-type: disc; <br>
+                              } <br>
+                              
+                              li li { <br>
+                                list-style-type: circle; <br>
+                              }</li> <br>
+                              <li>/* List items that are descendants of the "my-things" list */ <br>
+                                ul.my-things li { <br>
+                                  margin: 2em; <br>
+                                }</li> <br>
+                            <li>div p { <br>
+                                background-color: yellow; <br>
+                              }</li> <br>
+                        </ol>
+                    </p>
+                    <p>Een vordeel van descendant selectors is stylen zonder andere klassen of ids maken.</p>
+                <li><strong> class selectors</strong>
+                <p>De CSS class selector komt overeen met elementen op basis van de inhoud van hun class attribuut.</p>
+                <p>Syntax: <br>
+                    .class_name { style properties } <br>
+                or <br>
+                [class~=class_name] { style properties }</p>
+            
+            <p>Voorbeelden:
+                <ol>
+                    <li>/* All elements with class="spacious" */ <br>
+                        .spacious { <br>
+                          margin: 2em;<br>
+                        } <br>
+                        
+                        /* All &lt;li&gt; elements with class="spacious" */ <br>
+                        li.spacious { <br>
+                          margin: 2em; <br>
+                        } <br>
+                        
+                        /* All &lt;li&gt; elements with a class list that includes both "spacious" and "elegant" */ <br>
+                        /* For example, class="elegant retro spacious" */ <br>
+                        li.spacious.elegant { <br>
+                          margin: 2em; <br>
+                        }</li>
+                </ol>
+                Door een klasse aan een element toe te wijzen, worden de menselijke lezers van de code verteld dat die elementen tot een bepaalde groep behoren en dat 
+                de groep waartoe ze behoren relatief dezelfde stijlen zou moeten hebben. Dit maakt het verwijzen, onderhouden en bijwerken van CSS-stijl veel eenvoudiger en sneller.
+            </p></li>
+            </ul> 
+        
+        
+        <script src="" async defer></script>
+    </body>
+</html>

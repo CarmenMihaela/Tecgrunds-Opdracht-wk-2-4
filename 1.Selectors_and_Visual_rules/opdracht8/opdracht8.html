@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>1.Selectors_and_Visual_rules. Opdracht 8</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles_opdracht8.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <h1>Opdracht 8</h1>
+
+        <h3><strong>Cascade</strong></h3>
+        <p>Stylesheets cascade — at a very simple level, this means that the order of CSS rules matter;
+             when two rules apply that have equal specificity the one that comes last in the CSS is the one that will be used.</p>
+
+             <h4>This is a heading testing cascade</h4>
+
+        <h3><strong>Specificity</strong></h3>
+       <p> Specificity is how the browser decides which rule applies if multiple rules have different selectors, 
+           but could still apply to the same element. It is basically a measure of how specific a selector's selection will be:
+
+           <h5 class="main-heading">This is a heading testing specificity</h5>
+
+
+        An element selector is less specific — it will select all elements of that type that appear on a page — so will get a lower score.
+        A class selector is more specific — it will select only the elements on a page that have a specific class attribute value — so will get a higher score.</p>
+
+        <h3><strong>Inheritance</strong></h3>
+        <p> Inheritance also needs to be understood in this context — some CSS property values set on parent elements are inherited by their child elements, and some aren't.</p>
+        <span>This span tests inheritance.</span>
+
