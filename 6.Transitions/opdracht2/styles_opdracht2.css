@@ -1,0 +1,9 @@
+p {
+    transition-property: color;
+    transition-duration: 1s;
+    font-size: 5vw;
+}
+
+p:hover {
+    color: green;
+}

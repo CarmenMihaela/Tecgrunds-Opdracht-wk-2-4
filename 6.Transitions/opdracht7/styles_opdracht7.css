@@ -1,0 +1,14 @@
+div {
+    height: 10vw;
+    width: 10vw;
+    background-color: darksalmon;
+    margin: 5%;
+    animation: changeform 6s infinite alternate;
+}
+
+@keyframes changeform {
+    25% {border-bottom-right-radius: 6px; border-top-left-radius: 0; border-bottom-left-radius: 0;background-color: peachpuff; transform: rotate(-45deg);}
+    50% {border-radius: 50%; border-top-left-radius: 6px; border-bottom-left-radius: 6px; background-color: rgb(189, 181, 174); transform: rotate(0deg);}
+    75% {border-radius: 50%; border-top-left-radius: 6px; background-color: beige; transform: rotate(45deg);}  
+   100% {border-radius: 50%; background-color: pink; transform: rotate(45deg);}
+}

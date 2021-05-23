@@ -1,0 +1,73 @@
+
+
+div {
+    width: 1vw;
+    padding: 1vw 1.5vw;
+    margin: 15vw 45vw;
+    font-size: 2vw;
+    position: absolute;
+    border: 1px solid black;
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+
+div:first-of-type {
+    animation: move1 7s 2;
+    animation-direction:normal;
+    animation-timing-function:linear;
+}
+
+@keyframes move1 {
+    0%   {bottom: 7.3vw;}
+    10%  {bottom: 15vw;}
+    20%  {bottom: 16vw; left: 3vw;}
+    25%  {bottom: 17vw; left: 10vw;}
+    30%  {bottom: 19vw; left: 15vw;}
+    35%  {bottom: 22vw; left: 30vw;}
+    40%  {bottom: 25vw; left: 40vw;}
+    50%  {bottom: 27vw; left: 50vw;}
+    60%  {bottom: 22vw; left: 40vw;}
+    65%  {bottom: 17vw; left: 30vw;}
+    70%  {bottom: 13vw; left: 12vw;}
+    80%  {bottom: 9vw; left: 5vw;}
+    90%  {bottom: 8vw; left: 3vw;}
+    100% {bottom: 7.3vw;}
+  }
+
+  @keyframes move2 {
+    0%   {bottom: 7.3vw;}
+    10%  {bottom: 15vw;}
+    20%  {bottom: 16vw; right: 7vw;}
+    25%  {bottom: 17vw; right: 10vw;}
+    30%  {bottom: 19vw; right: 15vw;}
+    35%  {bottom: 22vw; right: 30vw;}
+    40%  {bottom: 25vw; right: 40vw;}
+    50%  {bottom: 27vw; right: 50vw;}
+    60%  {bottom: 22vw; right: 40vw;}
+    65%  {bottom: 17vw; right: 30vw;}
+    70%  {bottom: 12vw; right: 15vw;}
+    80%  {bottom: 9vw; right: 10vw;}
+    90%  {bottom: 8vw; right: 7vw;}
+    100% {bottom: 7.3vw;}
+  }
+
+div:nth-of-type(2) {
+    animation: move2 7s 2;
+    animation-direction:normal;
+    animation-timing-function:linear;
+}
+
+@keyframes move3 {
+    0%  {right: 5vw; bottom:9vw;}
+    10%  {right: 5vw; bottom:9vw;}
+    25%  {right: 50vw; bottom:9vw;}
+    50%  {right: 50vw;bottom: -10vw;}
+    75%  {right: 5vw;bottom: -10vw;}
+    100%  {bottom: 7.3vw;}
+  }
+
+  div:nth-of-type(3) {
+    animation: move3 7s 2;
+    animation-direction:normal;
+    animation-timing-function:linear;
+}

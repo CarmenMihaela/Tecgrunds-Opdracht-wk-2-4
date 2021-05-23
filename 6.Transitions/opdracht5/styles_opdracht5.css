@@ -1,0 +1,43 @@
+
+.container {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+img {
+    height: 17vw;
+    width: 17vw;
+    position: absolute;
+    z-index: -1;
+    left:0;
+ 
+}
+
+.container > div {
+    height: 17vw;
+    width: 17vw;
+    position: absolute;
+    
+}
+
+div:first-child {
+  border: 5px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 36px;
+  transition: background-color 4s;
+}
+
+div:nth-child(2) {
+  background-color: rgb(255, 211, 211);
+  transition: transform 1s ease;
+}
+
+.container:hover > div:nth-child(2) {
+  transform: translate(50%, 50%) rotate(30deg);
+
+}
+.container:hover > div:first-child {
+  background-color: rgb(255, 0, 0, 0.5);
+}

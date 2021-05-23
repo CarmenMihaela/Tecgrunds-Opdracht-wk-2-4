@@ -1,0 +1,202 @@
+body {
+    background-color:  rgb(128, 179, 128);
+    font-family: 'Lobster Two', cursive;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    float: right;
+    padding: 1%;
+    overflow: hidden;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black
+}
+
+.title img{
+    position: relative;
+    filter: brightness(50%);
+    max-width: 100%;
+}
+
+.title h1, .title p, .title a {
+    position: absolute;
+    z-index: 9999;
+    margin-left: 55%;
+}
+
+.title h1 {
+    color:  rgb(97, 135, 216);
+    top: 10%;
+}
+
+
+.title p {
+    color: rgb(97, 135, 216);
+    top: 20%;
+}
+
+.title a {
+    text-decoration: none;
+    display: inline;
+    border: 1px solid rgb(128, 179, 128);
+    color: rgb(97, 135, 216);
+    padding:  0.3% 1%;
+    top: 30%;
+}
+
+.title a:nth-of-type(2) {
+    margin-left: 60%;
+    color: rgb(128, 179, 128);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.popular > div > img {
+    max-width: 30%;
+}
+
+.popular, .menu, .containers {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+    .popular {
+        flex-direction: column;
+    }
+
+    .popular > div {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.popular > div {
+    text-align: center;
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .popular > div {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+.popular > div > p {
+    text-align: justify;
+}
+
+.popular > div > a {
+    margin-left: 85%;
+}
+
+h4 {
+    text-align: justify;
+    word-spacing: 25vw;
+}
+
+@media (max-width: 768px) {
+    h4 {
+        word-spacing: 80vw;
+    }
+}
+
+.menu {
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-left: 3%;
+}
+
+.containers {
+    margin-left: 3%;
+}
+
+.containers > div {
+    width: 30%;
+}
+
+h5 {
+    text-align: justify;
+    word-spacing: 15vw;
+}
+
+@media (max-width: 768px) {
+    .containers {
+        flex-direction: column;
+    }
+
+    .containers > div {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    h5 {
+        text-align: justify;
+        word-spacing: 63vw;
+    }
+
+    .chef {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .title h1 {
+        top: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .title p {
+        top: 9%;
+    }
+}
+
+@media (max-width: 768px) {
+    .title a {
+        top: 20%;
+    }
+
+    .title a:nth-last-of-type(1) {
+        margin-left: 65%;
+    }
+}
+
+footer {
+    background-color:pink;
+    display: flex;
+    color:rgb(97, 135, 216);
+    margin:-0.3%;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.navigation > a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
